@@ -6,19 +6,29 @@
     ["styled-components", { "ssr": true, "displayName": true, "preprocess": false }]
   ],
   "env": {
-    "production": {
-      "plugins" : [
-        ["transform-imports", {
-          "grommet-controls": {"transform": "grommet-controls/components/${member}", "preventFullImport": true },
-          "grommet": {"transform": "grommet/components/${member}", "preventFullImport": true },
-          "grommet-icons": {"transform": "grommet-icons/icons/${member}", "preventFullImport": true }
-        }]
-      ]
-    },
     "alias": {
       "plugins": [
         [
           "module-resolver", { "alias": {"grommet-controls": "../grommet-controls/src/js" } }
+        ]
+      ]
+    },
+    "dx-grid": {
+      "plugins": [
+        [
+          "module-resolver", { "alias": {"dx-react-grid-grommet": "../dx-react-grid-grommet/src" } }
+        ]
+      ]
+    },
+    "grommet": {
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "alias": {
+              "grommet": "../grommet/src/js"
+            }
+          }
         ]
       ]
     }
