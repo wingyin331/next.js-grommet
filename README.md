@@ -1,15 +1,10 @@
 # Example app with nextjs and grommet v2
 
-**Live site**: https://grommet-nextjs.herokuapp.com
-
-**Community**: https://spectrum.chat/crypto-grommet
-
-
 ## Install
   
   * Get sources in local folder
   ```
-  $ git clone https://github.com/atanasster/grommet-nextjs.git
+  $ git clone https://github.com/wingyin331/next.js-grommet.git
   ```
 
   * Move to your local folder
